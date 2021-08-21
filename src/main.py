@@ -38,7 +38,7 @@ def format_text(ascii_art):
             if key == "age":
                 lines[index] += "Uptime: \"" + config_dict[section][key] + " years\""
             elif key == "os":
-                lines[index] += key + ": \"" + config_dict[section][key] + "\""
+                lines[index] += key.upper() + ": \"" + config_dict[section][key] + "\""
             else:
                 lines[index] += key.title() + ": \"" + config_dict[section][key] + "\""
             index += 1
